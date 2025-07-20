@@ -1,0 +1,23 @@
+docker/mysql/data/
+# Laravel dependencies
+/src/vendor/
+
+# Node dependencies
+/src/node_modules/
+
+# Environment files
+/src/.env
+/src/.env.*.backup
+
+# Laravel storage (logs, cache)
+/src/storage/*.key
+/src/storage/*.log
+/src/storage/framework/*
+/src/storage/logs/*
+
+# IDE / OS junk
+.DS_Store
+.idea/
+
+# Docker DB
+docker/mysql/data/
