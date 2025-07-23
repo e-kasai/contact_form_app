@@ -23,11 +23,14 @@ ContactFormApp
 
 ### Laravel 環境構築
 
-1. docker compose exec php composer install
-2. docker compose exec php cp .env.example .env
-3. docker compose exec php php artisan key:generate
-4. docker compose exec php php artisan migrate
-5. docker compose exec php php artisan db:seed
+1. docker-compose exec php bash
+2. mkdir -p storage/framework/{cache,data,sessions,testing,views}
+3. chmod -R 777 storage bootstrap/cache
+4. composer install
+5. cp .env.example .env
+6. php artisan key:generate
+7. php artisan migrate
+8. php artisan db:seed
 
 ### 環境依存について
 
